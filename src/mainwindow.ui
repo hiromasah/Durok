@@ -302,8 +302,8 @@
     <addaction name="action_EF"/>
     <addaction name="action_D"/>
     <addaction name="action_FF4"/>
-    <addaction name="action_FF3"/>
     <addaction name="action_FF1"/>
+    <addaction name="action_OTHERDATA"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menu"/>
@@ -365,12 +365,12 @@
     <string>FF１ファイル</string>
    </property>
   </action>
-  <action name="action_FF3">
+  <action name="action_OTHERDATA">
    <property name="checkable">
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>FF３ファイル</string>
+    <string>その他データ（カンマ区切り）</string>
    </property>
   </action>
   <action name="action_FF4">

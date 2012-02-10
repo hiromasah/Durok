@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(timerProc()));
 
-    programVersion = "2.1";
+    programVersion = "2.2";
     programName = "Durok";
     formalProgramName = "DPC Data Sampling Program";
     pigFolder = "pig";
@@ -62,7 +62,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->listWidgetStatus->addItem(tr("Processing status."));
 
     ff1_input = new FormInput(&inputFilesPath);
-    ff3_input = 0;
+    otherdata_input = 0;
     ff4_input = 0;
     d_input = 0;
     ef_input = new FormInput(&inputFilesPath);
@@ -210,14 +210,14 @@ bool MainWindow::makeScriptFile(QString orgScriptPath, QString targetScriptPath)
         //    line += "REGISTER " + udf + ";\n";
         //}
         
+        if(otherdata_input){
+            QListWidget *list = otherdata_input->getListWidget();
+            line += makeScriptLoad(list, "CSV");
+        }
+
         if(ff1_input){
             QListWidget *list = ff1_input->getListWidget();
             line += makeScriptLoad(list, "FF1");
-        }
-
-        if(ff3_input){
-            QListWidget *list = ff3_input->getListWidget();
-            line += makeScriptLoad(list, "FF3");
         }
 
         if(ff4_input){
@@ -296,7 +296,12 @@ QString MainWindow::makeScriptLoad(QListWidget *list, QString key)
         if(list->count() == 1){
             QString fpath = list->item(0)->text();
             QFileInfo *fileinfo = new QFileInfo(fpath);
-            line += key + " = load '" + QString(encoder->fromUnicode(fileinfo->fileName())) + "';\n";
+            if(key == "CSV"){
+                line += key + " = load '" + QString(encoder->fromUnicode(fileinfo->fileName())) + "' USING PigStorage(',');\n";
+            }
+            else{
+                line += key + " = load '" + QString(encoder->fromUnicode(fileinfo->fileName())) + "' USING PigStorage('\t');\n";
+            }
         }
         else{
             wstr = "";
@@ -305,7 +310,12 @@ QString MainWindow::makeScriptLoad(QListWidget *list, QString key)
                 QFileInfo *fileinfo = new QFileInfo(fpath);
                 ::snprintf(wbuf, 32, "_%d", ii + 1);
                 QString itemName = key + QString::fromAscii(wbuf);
-                line += itemName + " = load '" + QString(encoder->fromUnicode(fileinfo->fileName())) + "';\n";
+                if(key == "CSV"){
+                    line += itemName + " = load '" + QString(encoder->fromUnicode(fileinfo->fileName())) + "' USING PigStorage(',');\n";
+                }
+                else{
+                    line += itemName + " = load '" + QString(encoder->fromUnicode(fileinfo->fileName())) + "' USING PigStorage('\t');\n";
+                }
                 if(wstr != ""){
                     wstr += ",";
                 }
@@ -403,8 +413,8 @@ void MainWindow::on_pushButton_Exec_clicked()
     if(ff1_input){
         fcnt += ff1_input->getListWidgetCount();
     }
-    if(ff3_input){
-        fcnt += ff3_input->getListWidgetCount();
+    if(otherdata_input){
+        fcnt += otherdata_input->getListWidgetCount();
     }
     if(ff4_input){
         fcnt += ff4_input->getListWidgetCount();
@@ -502,9 +512,9 @@ void MainWindow::on_pushButton_Exec_clicked()
     }
 
     if(stat){
-        if(ff3_input){
-            // Copy target FF3 files into the working folder.
-            copyErrorPath = ff3_input->copyFiles(workingFolder);
+        if(otherdata_input){
+            // Copy target ANOTHER DATA files into the working folder.
+            copyErrorPath = otherdata_input->copyFiles(workingFolder);
             if(copyErrorPath != ""){
                 stat = false;
             }
@@ -933,8 +943,8 @@ void MainWindow::resetGridLayout()
     if(ff4_input){
         ui->gridLayoutInput->removeWidget(ff4_input);
     }
-    if(ff3_input){
-        ui->gridLayoutInput->removeWidget(ff3_input);
+    if(otherdata_input){
+        ui->gridLayoutInput->removeWidget(otherdata_input);
     }
     if(ff1_input){
         ui->gridLayoutInput->removeWidget(ff1_input);
@@ -947,7 +957,7 @@ void MainWindow::setGridLayout()
     int colspan;
 
     if(ef_input){
-        if((cnt % 2 == 0) && (d_input == 0) && (ff4_input == 0) && (ff3_input == 0) && (ff1_input == 0)){
+        if((cnt % 2 == 0) && (d_input == 0) && (ff4_input == 0) && (otherdata_input == 0) && (ff1_input == 0)){
             colspan = 6;
         }
         else{
@@ -957,7 +967,7 @@ void MainWindow::setGridLayout()
         cnt++;
     }
     if(d_input){
-        if((cnt % 2 == 0) && (ff4_input == 0) && (ff3_input == 0) && (ff1_input == 0)){
+        if((cnt % 2 == 0) && (ff4_input == 0) && (otherdata_input == 0) && (ff1_input == 0)){
             colspan = 6;
         }
         else{
@@ -967,7 +977,7 @@ void MainWindow::setGridLayout()
         cnt++;
     }
     if(ff4_input){
-        if((cnt % 2 == 0) && (ff3_input == 0) && (ff1_input == 0)){
+        if((cnt % 2 == 0) && (otherdata_input == 0) && (ff1_input == 0)){
             colspan = 6;
         }
         else{
@@ -976,24 +986,24 @@ void MainWindow::setGridLayout()
         ui->gridLayoutInput->addWidget(ff4_input, (int)(cnt / 2), (cnt % 2) * 3, 1, colspan, 0);
         cnt++;
     }
-    if(ff3_input){
-        if((cnt % 2 == 0) && (ff1_input == 0)){
-            colspan = 6;
-        }
-        else{
-            colspan = 3;
-        }
-        ui->gridLayoutInput->addWidget(ff3_input, (int)(cnt / 2), (cnt % 2) * 3, 1, colspan, 0);
-        cnt++;
-     }
     if(ff1_input){
-        if(cnt % 2 == 0){
+        if((cnt % 2 == 0) && (otherdata_input == 0)){
             colspan = 6;
         }
         else{
             colspan = 3;
         }
         ui->gridLayoutInput->addWidget(ff1_input, (int)(cnt / 2), (cnt % 2) * 3, 1, colspan, 0);
+        cnt++;
+     }
+    if(otherdata_input){
+        if(cnt % 2 == 0){
+            colspan = 6;
+        }
+        else{
+            colspan = 3;
+        }
+        ui->gridLayoutInput->addWidget(otherdata_input, (int)(cnt / 2), (cnt % 2) * 3, 1, colspan, 0);
         cnt++;
     }
 }
@@ -1040,20 +1050,6 @@ void MainWindow::on_action_D_triggered(bool checked)
     setGridLayout();
 }
 
-void MainWindow::on_action_FF3_triggered(bool checked)
-{
-    resetGridLayout();
-    if(checked){
-        ff3_input = new FormInput(&inputFilesPath);
-        ff3_input->setTitle("FF3");
-    }
-    else{
-        ff3_input->close();
-        ff3_input = 0;
-    }
-    setGridLayout();
-}
-
 void MainWindow::on_action_FF4_triggered(bool checked)
 {
     resetGridLayout();
@@ -1064,6 +1060,20 @@ void MainWindow::on_action_FF4_triggered(bool checked)
     else{
         ff4_input->close();
         ff4_input = 0;
+    }
+    setGridLayout();
+}
+
+void MainWindow::on_action_OTHERDATA_triggered(bool checked)
+{
+    resetGridLayout();
+    if(checked){
+        otherdata_input = new FormInput(&inputFilesPath);
+        otherdata_input->setTitle("CSV");
+    }
+    else{
+        otherdata_input->close();
+        otherdata_input = 0;
     }
     setGridLayout();
 }

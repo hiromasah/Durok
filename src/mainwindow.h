@@ -28,7 +28,7 @@ private:
     QTimer *timer;
     FormHelp *formHelp;
     PThread *pthread;
-    FormInput *ff1_input, *ff3_input, *ff4_input, *d_input, *ef_input;
+    FormInput *ff1_input, *otherdata_input, *ff4_input, *d_input, *ef_input;
 
     bool CheckJavaHome(QSettings *ini_settings);
     void getTargetFiles(QListWidget *listWidget, QLineEdit *labelFileStatus, QStringList files);
@@ -52,8 +52,8 @@ private:
     QString outputFilesPath;
 
 private slots:
+    void on_action_OTHERDATA_triggered(bool checked);
     void on_action_FF4_triggered(bool checked);
-    void on_action_FF3_triggered(bool checked);
     void on_action_D_triggered(bool checked);
     void on_action_EF_triggered(bool checked);
     void on_action_FF1_triggered(bool checked);

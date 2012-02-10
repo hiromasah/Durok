@@ -17,7 +17,12 @@ FormInput::~FormInput()
 void FormInput::setTitle(QString wfileKind)
 {
     fileKind = wfileKind;
-    ui->groupBox->setTitle(wfileKind + tr("ファイル"));
+    if(wfileKind == "CSV"){
+        ui->groupBox->setTitle(tr("その他データ（カンマ区切り）"));
+    }
+    else{
+        ui->groupBox->setTitle(wfileKind + tr("ファイル"));
+    }
 }
 //------------------------------------------------------------------------------
 QString FormInput::copyFiles(QString targetFolder)
