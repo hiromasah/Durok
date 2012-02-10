@@ -1,0 +1,3 @@
+qt-sdk-win-opensource-2010.05.exe は下記URLからダウンロードできます。
+
+http://qt.nokia.com/

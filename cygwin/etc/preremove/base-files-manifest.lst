@@ -1,0 +1,7 @@
+etc/profile.d/lang.sh
+etc/profile.d/lang.csh
+etc/bash.bashrc
+etc/skel/.bashrc
+etc/skel/.inputrc
+etc/skel/.bash_profile
+etc/profile

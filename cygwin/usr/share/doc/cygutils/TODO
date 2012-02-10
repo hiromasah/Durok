@@ -1,0 +1,26 @@
+* Update lpr.cc and mkshortcut.c to use cygwin-1.7 cygwin_conv_path
+  instead of deprecated cygwin_conv_to_win32_path.
+
+* Update (some?) utilities to handle unicode filenames, similar to
+  IWAMURO Motonori's work on cygstart.
+
+
+* This package doesn't really DO anything with the configure results.
+  If certain libraries aren't found, then some programs shouldn't be
+  built. Ditto certain functions.  But right now, everything that is
+  needed is checked for in configure, but no adjustments are made
+  to accomodate those results -- make will just fail.  This is surely
+  not the right way to do things.
+
+* What to do about wacky windows includes?  <shlobj.h> etc?
+
+* GPLv3 conversion:
+  - banner is GPLv2 only. Contact original author.
+  - lpr is GPLv2 only. Contact original author.
+  - readshortcut is GPLv2 only. Contact original author.
+  - realpath is GPLv2+, but courtesy contact original author
+  - cygstart is GPLv2+, but courtesy contact original author
+  - cygdrop is GPLv2+, but courtesy contact original author
+  - mkshortcut is GPLv2+, but courtesy contact original author
+  - cygicons.dll compilation is GPLv2+, but includes artwork that
+    is unspecified GPL. Need to research whether this can be upgraded.

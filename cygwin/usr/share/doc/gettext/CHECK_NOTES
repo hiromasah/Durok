@@ -1,0 +1,95 @@
+gettext-tools
+===================================================================
+All 299 tests passed (28 tests were not run)
+   SKIP: gettext-3, -4, -5, -6, -7
+   SKIP: msgunfmt-csharp-1
+   SKIP: msgunfmt-java-1
+   SKIP: recode-sr-latin-1
+   SKIP: recode-sr-latin-2
+   SKIP: lang-* PASS: -elisp, -ycp, -po, -rst
+
+gettext-3: skipped on non-glibc systems
+gettext-4: skipped (no 'traditional french locale')
+gettext-5: skipped on non-glibc systems
+gettext-6: skipped on non-glibc systems
+gettext-7: skipped on non-glibc systems
+msgunfmt-csharp-1: skipped because csharp not available
+msgunfmt-java-1:   skipped because java support not built
+recode-sr-latin-1: skipped (no 'french UTF-8 locale')
+recode-sr-latin-2: skipped (no 'japanese EUC-JP locale')
+
+
+Note that ALL of the lang- tests are now skipped (or, if not skipped, 
+they should have been skipped).  Cygwin's setlocale() function
+checks that the argument is either "C" or "" (or is in a slightly 
+larger list if cygwin1.dll was compiled with _MB_CAPABLE), and fails 
+otherwise.  The properly-written lang- tests check the return value 
+of setlocale, and if it fails (which it does), then the test itself
+is skipped.
+
+This is a shame, because the underlying bindtextdomain stuff actually
+works and it would be nice to verify that using the testsuite. Oh 
+well. Maybe on cygwin-1.7.
+
+
+gettext-tools/gnulib-tests
+===================================================================
+All tests fail when --enable-relocation (the tests do not "activate"
+the relocation support, but the gnulib library they link to expect
+it).
+
+When not --enable-relocation (the normal case):
+All 47 tests passed (2 tests were not run)
+
+test-mbsstr2.sh: skipped (no french Unicode locale)
+test-mbsstr3.sh: skipped (no chinese GB18030 locale)
+
+
+gettext-runtime
+===================================================================
+All 1 tests passed
+
+
+gettext-rpath
+===================================================================
+All 30 tests passed
+
+The lib-link test suite has been modified for cygwin, in two ways:
+(1) the test scripts extend the PATH to include the installation
+    directories of the sub-dependent libraries, and
+(2) the Makefiles for the executable tests extend the PATH to
+    include the installation directory of the direct dependent
+    library.
+In this way, the PATH is sure to include all directories which
+contain the DLLs used by the test application. However, all of these 
+changes are simply workarounds for the primary defect on windows:
+there IS no RPATH support. Modifying the $PATH is no different than
+modifying $LD_LIBRARY_PATH on other platforms -- and all of these
+rpath tests are *supposed* to be checking that RPATH support actually
+works *without* manipulating $LD_LIBRARY_PATH.
+
+No matter how you slice it on windows, it doesn't. So ALL of these
+changes are "cheating". Earlier versions of gettext (0.15 and before)
+*erroneously* passed many of these tests *without* the workaround
+above -- because the tests in which the dependent and sub-dependent
+libraries were installed into different prefixes did NOT actually
+link against those DLLs, but linked statically. So, naturally, there
+was no runtime "can't find the DLL" issue. This was "fixed" in
+gettext-0.17 -- so now these tests began to fail, as they always should
+have done, without the workarounds described above.
+
+
+The following six tests WOULD fail on cygwin (regardless of the
+"cheating" above), except that they have been removed from the
+list of tests actually performed: 
+  rpath-2aac  rpath-2abc  ### test files no longer present
+  rpath-3aac  rpath-3aaf  ### ditto for these two
+  rpath-3abc  rpath-3abf  ### ditto for these two
+These are known (and expected) failures on cygwin; you can't create
+a shared library that depends on a static lib.
+
+Similarly, the following tests fail on ALL platforms, but have
+been removed from the actual test sequence:
+  rpath-3aae  rpath-3aag  ### test files present but excluded for all platforms
+  rpath-3abe  rpath-3abg  ### test files present but excluded for all platforms
+

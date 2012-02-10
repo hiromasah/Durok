@@ -1,0 +1,137 @@
+2010/10/27 18:01:47 Starting cygwin install, version 2.721
+2010/10/27 18:01:47 io_stream_cygfile: fopen(/etc/setup/setup.rc) failed 2 No such file or directory
+2010/10/27 18:01:47 io_stream_cygfile: fopen(/etc/setup/last-cache) failed 2 No such file or directory
+2010/10/27 18:01:47 io_stream_cygfile: fopen(/etc/setup/last-action) failed 2 No such file or directory
+2010/10/27 18:01:47 io_stream_cygfile: fopen(/etc/setup/net-method) failed 2 No such file or directory
+2010/10/27 18:01:47 io_stream_cygfile: fopen(/etc/setup/net-proxy-host) failed 2 No such file or directory
+2010/10/27 18:01:47 io_stream_cygfile: fopen(/etc/setup/net-proxy-port) failed 2 No such file or directory
+2010/10/27 18:01:47 io_stream_cygfile: fopen(/etc/setup/last-mirror) failed 2 No such file or directory
+2010/10/27 18:01:47 io_stream_cygfile: fopen(/etc/setup/extrakeys) failed 2 No such file or directory
+2010/10/27 18:01:47 io_stream_cygfile: fopen(/etc/setup/chooser_window_settings) failed 2 No such file or directory
+2010/10/27 18:01:47 Current Directory: C:\Users\yamakawa\Desktop
+2010/10/27 18:01:47 User has backup/restore rights
+2010/10/27 18:01:47 Changing gid to Administrators
+2010/10/27 18:01:47 Could not open service McShield for query, start and stop. McAfee may not be installed, or we don't have access.
+2010/10/27 18:02:37 source: network install
+2010/10/27 18:03:17 root: C:\cygwin binary system
+2010/10/27 18:03:31 Selected local directory: C:\Users\yamakawa\Desktop
+2010/10/27 18:04:14 net: Direct
+2010/10/27 18:04:14 io_stream_cygfile: fopen(/etc/setup/mirrors-lst) failed 2 No such file or directory
+2010/10/27 18:05:54 site: http://cygwin.mirrors.hoobly.com/
+2010/10/27 18:06:00 io_stream_cygfile: fopen(/etc/setup/installed.db) failed 2 No such file or directory
+2010/10/27 18:06:03 io_stream_cygfile: fopen(/etc/setup/timestamp) failed 2 No such file or directory
+2010/10/27 18:06:05 io_stream_cygfile: fopen(/etc/setup/new-cygwin-version) failed 2 No such file or directory
+2010/10/27 18:07:39 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/alternatives/alternatives-1.3.30c-10.tar.bz2
+2010/10/27 18:07:39 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/base-cygwin/base-cygwin-2.1-1.tar.bz2
+2010/10/27 18:07:41 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/base-files/base-files-3.9-3.tar.bz2
+2010/10/27 18:07:42 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/base-passwd/base-passwd-3.1-1.tar.bz2
+2010/10/27 18:07:51 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/bash/bash-3.2.51-24.tar.bz2
+2010/10/27 18:07:58 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/bzip2/bzip2-1.0.5-10.tar.bz2
+2010/10/27 18:08:41 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/coreutils/coreutils-8.5-2.tar.bz2
+2010/10/27 18:08:44 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/cygutils/cygutils-1.4.4-1.tar.bz2
+2010/10/27 18:09:14 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/cygwin/cygwin-1.7.7-1.tar.bz2
+2010/10/27 18:09:21 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/cygwin-doc/cygwin-doc-1.7-1.tar.bz2
+2010/10/27 18:09:23 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/dash/dash-0.5.6.1-2.tar.bz2
+2010/10/27 18:09:27 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/diffutils/diffutils-2.9-1.tar.bz2
+2010/10/27 18:09:28 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/editrights/editrights-1.01-2.tar.bz2
+2010/10/27 18:09:40 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/findutils/findutils-4.5.9-1.tar.bz2
+2010/10/27 18:09:49 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gawk/gawk-3.1.8-1.tar.bz2
+2010/10/27 18:09:52 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gettext/gettext-0.17-11.tar.bz2
+2010/10/27 18:09:56 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/grep/grep-2.6.3-1.tar.bz2
+2010/10/27 18:10:40 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/groff/groff-1.20.1-2.tar.bz2
+2010/10/27 18:10:41 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gzip/gzip-1.3.12-2.tar.bz2
+2010/10/27 18:10:42 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/ipc-utils/ipc-utils-1.0-1.tar.bz2
+2010/10/27 18:10:45 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/less/less-436-1.tar.bz2
+2010/10/27 18:10:45 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/attr/libattr1/libattr1-2.4.43-1.tar.bz2
+2010/10/27 18:10:47 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/bzip2/libbz2_1/libbz2_1-1.0.5-10.tar.bz2
+2010/10/27 18:10:48 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gcc4/libgcc1/libgcc1-4.3.4-3.tar.bz2
+2010/10/27 18:10:51 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gmp/libgmp3/libgmp3-4.3.1-3.tar.bz2
+2010/10/27 18:11:00 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/libiconv/libiconv2/libiconv2-1.13.1-1.tar.bz2
+2010/10/27 18:11:01 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gettext/libintl8/libintl8-0.17-11.tar.bz2
+2010/10/27 18:11:04 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/xz/liblzma1/liblzma1-4.999.9beta-11.tar.bz2
+2010/10/27 18:11:07 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/ncurses/libncurses10/libncurses10-5.7-18.tar.bz2
+2010/10/27 18:11:10 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/ncurses/libncurses8/libncurses8-5.5-10.tar.bz2
+2010/10/27 18:11:13 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/ncurses/libncurses9/libncurses9-5.7-16.tar.bz2
+2010/10/27 18:11:16 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/pcre/libpcre0/libpcre0-8.02-1.tar.bz2
+2010/10/27 18:11:17 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/popt/libpopt0/libpopt0-1.6.4-4.tar.bz2
+2010/10/27 18:11:19 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/readline/libreadline7/libreadline7-6.0.3-2.tar.bz2
+2010/10/27 18:11:20 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/libsigsegv/libsigsegv2/libsigsegv2-2.8-1.tar.bz2
+2010/10/27 18:11:23 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gcc4/libstdc++6/libstdc++6-4.3.4-3.tar.bz2
+2010/10/27 18:11:24 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/login/login-1.10-10.tar.bz2
+2010/10/27 18:11:27 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/man/man-1.6f-1.tar.bz2
+2010/10/27 18:11:30 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/rebase/rebase-3.0.1-1.tar.bz2
+2010/10/27 18:11:31 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/run/run-1.1.12-11.tar.bz2
+2010/10/27 18:11:34 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/sed/sed-4.2.1-1.tar.bz2
+2010/10/27 18:11:44 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/tar/tar-1.23-1.tar.bz2
+2010/10/27 18:11:45 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/terminfo/terminfo-5.7_20091114-14.tar.bz2
+2010/10/27 18:11:46 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/terminfo/terminfo0/terminfo0-5.5_20061104-12.tar.bz2
+2010/10/27 18:11:57 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/texinfo/texinfo-4.13-3.tar.bz2
+2010/10/27 18:12:04 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/tzcode/tzcode-2010j-1.tar.bz2
+2010/10/27 18:12:06 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/which/which-2.20-2.tar.bz2
+2010/10/27 18:12:08 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/xz/xz-4.999.9beta-11.tar.bz2
+2010/10/27 18:12:10 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/zlib/zlib0/zlib0-1.2.5-1.tar.bz2
+2010/10/27 18:12:10 Downloaded C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/_update-info-dir/_update-info-dir-00925-1.tar.bz2
+2010/10/27 18:12:12 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/alternatives/alternatives-1.3.30c-10.tar.bz2
+2010/10/27 18:12:12 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/base-cygwin/base-cygwin-2.1-1.tar.bz2
+2010/10/27 18:12:12 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/base-files/base-files-3.9-3.tar.bz2
+2010/10/27 18:12:12 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/base-passwd/base-passwd-3.1-1.tar.bz2
+2010/10/27 18:12:12 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/bash/bash-3.2.51-24.tar.bz2
+2010/10/27 18:12:13 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/bzip2/bzip2-1.0.5-10.tar.bz2
+2010/10/27 18:12:13 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/coreutils/coreutils-8.5-2.tar.bz2
+2010/10/27 18:12:17 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/cygutils/cygutils-1.4.4-1.tar.bz2
+2010/10/27 18:12:17 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/cygwin/cygwin-1.7.7-1.tar.bz2
+2010/10/27 18:12:18 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/cygwin-doc/cygwin-doc-1.7-1.tar.bz2
+2010/10/27 18:12:19 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/dash/dash-0.5.6.1-2.tar.bz2
+2010/10/27 18:12:20 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/diffutils/diffutils-2.9-1.tar.bz2
+2010/10/27 18:12:20 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/editrights/editrights-1.01-2.tar.bz2
+2010/10/27 18:12:20 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/findutils/findutils-4.5.9-1.tar.bz2
+2010/10/27 18:12:20 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gawk/gawk-3.1.8-1.tar.bz2
+2010/10/27 18:12:21 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gettext/gettext-0.17-11.tar.bz2
+2010/10/27 18:12:21 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/grep/grep-2.6.3-1.tar.bz2
+2010/10/27 18:12:21 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/groff/groff-1.20.1-2.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gzip/gzip-1.3.12-2.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/ipc-utils/ipc-utils-1.0-1.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/less/less-436-1.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/attr/libattr1/libattr1-2.4.43-1.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/bzip2/libbz2_1/libbz2_1-1.0.5-10.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gcc4/libgcc1/libgcc1-4.3.4-3.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gmp/libgmp3/libgmp3-4.3.1-3.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/libiconv/libiconv2/libiconv2-1.13.1-1.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gettext/libintl8/libintl8-0.17-11.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/xz/liblzma1/liblzma1-4.999.9beta-11.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/ncurses/libncurses10/libncurses10-5.7-18.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/ncurses/libncurses8/libncurses8-5.5-10.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/ncurses/libncurses9/libncurses9-5.7-16.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/pcre/libpcre0/libpcre0-8.02-1.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/popt/libpopt0/libpopt0-1.6.4-4.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/readline/libreadline7/libreadline7-6.0.3-2.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/libsigsegv/libsigsegv2/libsigsegv2-2.8-1.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/gcc4/libstdc++6/libstdc++6-4.3.4-3.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/login/login-1.10-10.tar.bz2
+2010/10/27 18:12:25 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/man/man-1.6f-1.tar.bz2
+2010/10/27 18:12:26 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/rebase/rebase-3.0.1-1.tar.bz2
+2010/10/27 18:12:26 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/run/run-1.1.12-11.tar.bz2
+2010/10/27 18:12:26 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/sed/sed-4.2.1-1.tar.bz2
+2010/10/27 18:12:26 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/tar/tar-1.23-1.tar.bz2
+2010/10/27 18:12:27 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/terminfo/terminfo-5.7_20091114-14.tar.bz2
+2010/10/27 18:12:27 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/terminfo/terminfo0/terminfo0-5.5_20061104-12.tar.bz2
+2010/10/27 18:12:28 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/texinfo/texinfo-4.13-3.tar.bz2
+2010/10/27 18:12:29 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/tzcode/tzcode-2010j-1.tar.bz2
+2010/10/27 18:12:33 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/which/which-2.20-2.tar.bz2
+2010/10/27 18:12:33 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/xz/xz-4.999.9beta-11.tar.bz2
+2010/10/27 18:12:33 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/zlib/zlib0/zlib0-1.2.5-1.tar.bz2
+2010/10/27 18:12:33 Extracting from file://C:\Users\yamakawa\Desktop/http%3a%2f%2fcygwin.mirrors.hoobly.com%2f/release/_update-info-dir/_update-info-dir-00925-1.tar.bz2
+2010/10/27 18:12:33 Changing gid back to original
+2010/10/27 18:12:33 running: C:\cygwin\bin\bash.exe --norc --noprofile /etc/postinstall/000-cygwin-post-install.sh
+2010/10/27 18:12:36 running: C:\cygwin\bin\bash.exe --norc --noprofile /etc/postinstall/passwd-grp.sh
+2010/10/27 18:12:38 running: C:\cygwin\bin\bash.exe --norc --noprofile /etc/postinstall/terminfo0.sh
+2010/10/27 18:12:44 running: C:\cygwin\bin\bash.exe --norc --noprofile /etc/postinstall/update-info-dir.sh
+2010/10/27 18:12:50 running: C:\cygwin\bin\bash.exe --norc --noprofile /etc/postinstall/coreutils.sh
+2010/10/27 18:12:51 running: C:\cygwin\bin\bash.exe --norc --noprofile /etc/postinstall/terminfo.sh
+2010/10/27 18:12:58 running: C:\cygwin\bin\bash.exe --norc --noprofile /etc/postinstall/bash.sh
+2010/10/27 18:12:58 running: C:\cygwin\bin\bash.exe --norc --noprofile /etc/postinstall/base-files-profile.sh
+2010/10/27 18:13:00 running: C:\cygwin\bin\bash.exe --norc --noprofile /etc/postinstall/base-files-mketc.sh
+2010/10/27 18:13:01 running: C:\cygwin\bin\bash.exe --norc --noprofile /etc/postinstall/man.sh
+2010/10/27 18:13:02 Changing gid to Administrators
+2010/10/27 18:13:44 note: Installation Complete
+2010/10/27 18:13:44 Ending cygwin install

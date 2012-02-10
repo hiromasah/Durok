@@ -1,0 +1,3 @@
+pig-0.8.0.tar.gz は下記URLからダウンロードできます。
+
+http://pig.apache.org/
